@@ -1,0 +1,151 @@
+body {
+    background-color:beige;
+}
+h1, h2, h3 {
+    font-size: 32px;
+    color: rgb(190, 108, 0);
+    margin-left: 10px;
+}
+p, li {
+    font-size: 24px;
+    color: lightsalmon;
+    margin: 10px;
+}
+a {
+    color: #0077cc;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.content_left {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background: rgb(232, 218, 199);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.content_right {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background: rgb(232, 218, 199);
+    padding: 22px;
+    border-radius: 20px;
+    margin-bottom: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: right;
+    background: rgb(232, 218, 199);
+    font-size: 32px;
+}
+.container {
+    background: rgb(232, 218, 199);
+    text-align: center;
+    height: 200px;
+}
+.block {
+    height: 200px;
+    width: 200px;
+    background: rgb(255, 174, 60);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.photo_center {
+    width: 200px;
+    display: block;
+    margin: -200px auto;
+}
+.container-2 {
+    background: rgb(232, 218, 199);
+    height: 300px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.block-2 {
+    width: 200px;
+    height: 200px;
+    border: dashed black;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.container-3 {
+    display: flex;
+    background: rgb(232, 218, 199);
+    border: 4px solid black;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .block-3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(208, 143, 53);
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+.container-position {
+    background: white;
+    position: relative;
+    border: 5px solid black;
+    height: 500px;
+    width: 500px;
+    border-radius: 25px;
+}
+
+.square {
+    position: absolute;
+    border: solid;
+}
+
+.red {
+    border-color: red;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 100px;
+}
+
+.blue {
+    border-color: blue;
+    width: 100px;
+    height: 100px;
+    left: 170px;
+    top: 170px;
+}
+
+.green {
+    border-color: green;
+    width: 100px;
+    height: 100px;
+    left: 240px;
+    top: 240px;
+}
+
+.photo_fixed {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 10px;
+    right: 10px;
+}

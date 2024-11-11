@@ -1,0 +1,36 @@
+a {
+    color: #242424;
+    text-decoration: none;
+    margin: 10px;
+}
+caption {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+
+table, th, td {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(1) {background-color: azure;}
+tr:nth-child(even) {background-color: aliceblue;}
+
+input {
+    width: 400px;
+}
+
+.header {
+    display: flex;
+    justify-content: right;
+    background: rgb(207, 207, 207);
+    font-size: 32px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Таблица</title>
+        <link rel="stylesheet" href="table.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="index.html">Основная страница</a>
+            <a href="page2.html">Позиционирование элементов</a>
+        </div>
+
+        <table style="width:100%">
+            <caption>Вау Таблица</caption>
+            <tr>
+                <th>Персонаж</th>
+                <th>Описание</th>
+                <th>Характер</th>
+                <th>Семейное положение</th>
+            </tr>
+            <tr>
+                <td>Ксенофонтов Владимир Андреевич</td>
+                <td>Буйный в пьяном виде</td>
+                <td>Скверный</td>
+                <td>Живет с одногруппником</td>
+            </tr>
+            <tr>
+                <td>Гослинг Райан Томас</td>
+                <td>Ну буквально я</td>
+                <td>Очень мягкий</td>
+                <td>Женат</td>
+            </tr>
+            <tr>
+                <td>Карпович Михаил </td>
+                <td>Туп, жаден, прожорлив, надменен, трусоват, ленив</td>
+                <td>Отсутствует</td>
+                <td>Не женат</td>
+            </tr>
+            <tr>
+                <td>Староста</td>
+                <td>Великичайший из фтарофт</td>
+                <td>Скверный</td>
+                <td>Не женат</td>
+            </tr>
+            <tr>
+                <td>Джеки чан</td>
+                <td>Снимался в фильме с лошадью, что уважаемо</td>
+                <td>Твердый</td>
+                <td>Женат</td>
+            </tr>
+        </table>
+        <form id="form">
+            <label for="name">Персонаж</label><br>
+            <input type="text" id="name" name="name" value="Тот, чье имя нельзя назвать"><br>
+            <label for="charact">Описание</label> <br>
+            <input type="text" id="charact" name="charact" value="Самый могучий темный колдун, люблю котиков"><br>
+            <label for="personality">Характер</label><br>
+            <input type="text" id="personality" name="personality" value="Уххх какой"><br>
+            <label for="married">Семейное положение</label><br>
+            <input type="text" id="married" name="married" value="Вот тут не уверен. По книгам есть ребенок от Белатрисы"><br><br>
+            <input type="submit" value="Добавить">
+        </form>
+        <script>
+            document.getElementById("form").addEventListener("submit", (event) => {
+        const form = new FormData(event.target);
+        console.log(Object.fromEntries(form));
+        event.preventDefault();
+      });
+        </script>
+    </body>
+</html>
